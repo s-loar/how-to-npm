@@ -1,0 +1,22 @@
+How To npm
+
+There is a great, short introductory tutorial for npm at https://github.com/npm/how-to-npm.
+
+Npm comes with Node.js. So to start with npm packages, you first install Node. To check that npm is installed, you can type the command 'npm -v' in the terminal. If you get a version number back, like 2.6.0, then it is installed correctly. If you are a MAC user, you can also find npm installed at .usr/local/bin.
+
+The tutorial goes through several commands and typical things you will do with npm. The most common one is 'npm install'. You will use this to install many 3rd party libraries and frameworks.
+
+Npm also lets you set up tasks to run to help automate tasks for you. To do this, you add a scripts section to your package.json file. The tutorial gives this example.
+
+<code>
+"scripts": {
+    "test": "node test.js"
+  },
+</code>
+
+So to run this script, you simply type 'npm test' and "node test.js" is run.
+
+The tutorial then goes through how to create your own packages to share with others. This is as simple as 'npm publish'. And of course you will want to create new versions and update what is available.
+
+Finally, the tutorial shows how to remove a package you have installed to your project with the 'npm rm' command. Be sure to use '--save' to have the dependency removed from your package.json file.
+
